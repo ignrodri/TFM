@@ -1,5 +1,6 @@
 #!/bin/bash
 
+cd $HOME
 sudo yum install emacs git git-core mod_dav_svn subversion freeglut freeglut-devel clang -y
 sudo yum groupinstall "Development Tools"
 sudo yum groupinstall "Development Libraries"
