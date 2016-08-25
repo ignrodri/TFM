@@ -1,6 +1,8 @@
 #!/bin/bash
 
 cd $HOME
+git config --global user.email "ignrodri@ucm.es"
+git config --global user.name "Ignacio"
 sudo yum install emacs git git-core mod_dav_svn subversion freeglut freeglut-devel clang -y
 sudo yum groupinstall "Development Tools"
 sudo yum groupinstall "Development Libraries"
