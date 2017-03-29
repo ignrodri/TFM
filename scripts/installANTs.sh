@@ -18,5 +18,6 @@ git clone git://github.com/stnava/ANTs.git
 mkdir antsbin
 cd antsbin
 ccmake ../ANTs
+# c c g
 sudo make -j 4
 sudo cp /home/ec2-user/bin/ANTs/Scripts/* /home/ec2-user/bin/antsbin/bin

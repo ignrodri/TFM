@@ -1,0 +1,18 @@
+List of images
+
+<Pig>-<T>-DTI.bval List of b-values of diffusion image.
+<Pig>-<T>-DTI.bvec List of gradient directions of diffusion image. Except for b = 0, gradient directions are normalized.
+<Pig>-<T>-DTI.nii.gz DTI images. Typically, 16 images.
+<Pig>-<T>-DTIbo.nii.gz DTI image corresponding to b = 0. It is a subset of Pig-T-DTI.nii.gz.
+<Pig>-<T>-gray.nii.gz Tissue probability map of gray matter. Used to mask Pig-T-tensor images.
+<Pig>-<T>-mask.nii.gz Brain mask (0 or 1)
+<Pig>-<T>-T1.nii.gz T1-weighted anatomical image.
+<Pig>-<T>-T1masked.nii.gz Pixel by pixel product of Pig-T-mask.nii.gz and Pig-T-T1.nii.gz.
+<Pig>-<T>-tensor_FA.nii.gz Fractional anisotropy map obtained from Pig-T-DTI.nii.gz
+<Pig>-<T>-tensor_MD.nii.gz Mean diffusion map obtained from Pig-T-DTI.nii.gz.
+<Pig>-<T>-white.nii.gz Tissue probability map of white matter. Used to mask Pig-T-tensor images.
+template<Pig>.nii.gz Template (average) of <Pig>-<T>-T1masked.nii.gz images.
+template.nii.gz Template (average) of template<Pig>.nii.gz images.
+
+Pig: Animal number. One of 2225, 2327, 2444, 2459, 2502, 2672.
+T: Time point. One of X1, X2, X3, X4, X5.
