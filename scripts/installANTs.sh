@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# sudo yum install git
+# git clone https://github.com/ignrodri/TFM
+
+sudo yum update
 cd $HOME
 git config --global user.email "ignrodri@ucm.es"
 git config --global user.name "Ignacio"
