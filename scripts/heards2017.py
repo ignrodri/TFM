@@ -6,11 +6,11 @@ import os.path
 str1 = ['2225', '2327', '2444', '2459', '2502', '2672']
 str2 = ['X1', 'X2', 'X3', 'X4', 'X5']
 
-fstop = '/home/ec2-user/xtfm/images/stop'
+fstop = '/home/ec2-user/TFM/images/stop'
 
 for s1 in str1:
 	for s2 in str2:
-		fst = '/home/ec2-user/xtfm/images/' + s1 + '-' + s2
+		fst = '/home/ec2-user/TFM/images/' + s1 + '-' + s2
 		fmat = fst + '-DTI-0GenericAffine.mat'
 		fwarp = fst + '-DTI-1InverseWarp.nii.gz'
 		fmask = fst + '-T1masked.nii.gz'
