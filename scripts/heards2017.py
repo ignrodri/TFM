@@ -21,11 +21,11 @@ for s1 in str1:
 		fdtiright = fst + '-DTIhpright.nii.gz'
 		
 		if not os.path.isfile(fstop) and not os.path.isfile(fmat) and os.path.isfile(fmask) and os.path.isfile(fdti):
-			os.system('touch + fst + 'mat.x')
+			os.system('touch ' + fst + 'mat.x')
 			os.system('antsRegistrationSyNQuick.sh -d 3 -f ' + fmask + ' -m ' + fdti + ' -o ' + fst + '-DTI-')
 		if not os.path.isfile(fstop) and not os.path.isfile(fdtileft) and os.path.isfile(ft1left) and os.path.isfile(fmat):
-			os.system('touch + fst + 'left.x')
+			os.system('touch ' + fst + 'left.x')
 			os.system('antsApplyTransforms -d 3 -i ' + ft1left + ' -o ' + fdtileft + ' -r ' + fdti + '-t [' + fmat + ',1] -t ' + fwarp)
 		if not os.path.isfile(fstop) and not os.path.isfile(fdtiright) and os.path.isfile(ft1right) and os.path.isfile(fmat):
-			os.system('touch + fst + 'right.x')
+			os.system('touch ' + fst + 'right.x')
 			os.system('antsApplyTransforms -d 3 -i ' + ft1right + ' -o ' + fdtiright + ' -r ' + fdti + '-t [' + fmat + ',1] -t ' + fwarp)
