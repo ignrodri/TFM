@@ -4,6 +4,7 @@ mv -f /home/ec2-user/TFM/images/*.mat /home/ec2-user/xtfm/images
 mv -f /home/ec2-user/TFM/images/*Warp.nii.gz /home/ec2-user/xtfm/images
 mv -f /home/ec2-user/TFM/images/*Warped.nii.gz /home/ec2-user/xtfm/images
 /bin/rm -f /home/ec2-user/TFM/images/stop
+/bin/rm -f /home/ec2-user/TFM/images/*.x
 cd /home/ec2-user/TFM
 git add --all .
 git commit -m "commit"
