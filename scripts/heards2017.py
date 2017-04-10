@@ -16,9 +16,9 @@ for s1 in str1:
 		fmask = fst + '-T1masked.nii.gz'
 		fdti = fst + '-DTIb0.nii.gz'
 		ft1left = fst + '-T1hpleft.nii.gz'
-		ft1right = fst + '-T1hright.nii.gz'
+		ft1right = fst + '-T1hpright.nii.gz'
 		fdtileft = fst + '-DTIhpleft.nii.gz'
-		fdtiright = fst + '-DTIhright.nii.gz'
+		fdtiright = fst + '-DTIhpright.nii.gz'
 		
 		if not os.path.isfile(fstop) and not os.path.isfile(fmat) and os.path.isfile(fmask) and os.path.isfile(fdti):
 			os.system('antsRegistrationSyNQuick.sh -d 3 -f ' + fmask + ' -m ' + fdti + ' -o ' + fst + '-DTI-')
