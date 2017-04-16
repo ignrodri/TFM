@@ -3,8 +3,8 @@
 # sudo yum install git
 # git clone https://github.com/ignrodri/TFM
 
-sudo yum update
-sudo yum install python
+sudo yum update -y
+sudo yum install python -y
 cd $HOME
 git config --global user.email "ignrodri@ucm.es"
 git config --global user.name "Ignacio"
