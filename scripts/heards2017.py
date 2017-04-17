@@ -20,8 +20,8 @@ for s1 in str1:
 		fdtileft = fst + '-DTIhpleft.nii.gz'
 		fdtiright = fst + '-DTIhpright.nii.gz'
 		freg = 'antsRegistrationSyNQuick.sh -d 3 -f ' + fmask + ' -m ' + fdti + ' -o ' + fst + '-DTI-'
-		fleft = 'antsApplyTransforms -d 3 -i ' + ft1left + ' -o ' + fdtileft + ' -r ' + fdti + '-t [' + fmat + ',1] -t ' + fwarp
-		fright = 'antsApplyTransforms -d 3 -i ' + ft1right + ' -o ' + fdtiright + ' -r ' + fdti + '-t [' + fmat + ',1] -t ' + fwarp
+		fleft = 'antsApplyTransforms -d 3 -i ' + ft1left + ' -o ' + fdtileft + ' -r ' + fdti + ' -t [' + fmat + ',1] -t ' + fwarp
+		fright = 'antsApplyTransforms -d 3 -i ' + ft1right + ' -o ' + fdtiright + ' -r ' + fdti + ' -t [' + fmat + ',1] -t ' + fwarp
 		
 		if not os.path.isfile(fstop) and not os.path.isfile(fmat) and os.path.isfile(fmask) and os.path.isfile(fdti):
 			os.system('touch ' + fst + 'mat.x')
