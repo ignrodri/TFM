@@ -14,7 +14,7 @@ for s1 in str1:
 		fmat = fst + '-DTI-0GenericAffine.mat'
 		fwarp = fst + '-DTI-1InverseWarp.nii.gz'
 		fmask = fst + '-T1masked.nii.gz'
-		fdti = fst + '-DTIb0.nii.gz'
+		fdti = fst + '-DTImasked.nii.gz'
 		ft1left = fst + '-T1hpleft.nii.gz'
 		ft1right = fst + '-T1hpright.nii.gz'
 		fdtileft = fst + '-DTIhpleft.nii.gz'
